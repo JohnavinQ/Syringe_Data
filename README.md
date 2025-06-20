@@ -19,15 +19,18 @@ in terminal for visual studio code type
 command to gather data <o>"python syringe_data.py"</o>
 
 to run syringe_data.py type in the terminal:
-<o>'python syringe_data.py "text_name" ' </o>
-    text_name can be anything you want to call the text file
 
-    When the code is running you can press any key to exit the code and see the text file
+    python syringe_data.py "text_name"
+
+text_name can be anything you want to call the text file
+
+When the code is running you can press any key to exit the code and see the text file
 
 # CVS_Convert.py
 
 to run CVS_Convert.py type in the terminal:
-<o>'python CVS_Convert.py "text_file" "CVS_file"</o>
+
+    python CVS_Convert.py "text_file" "CVS_file"
 
 you need to put <g>text_name.txt </g> in text_file
 and <g>CVS_name.cvs</g> in the CVS_file  
