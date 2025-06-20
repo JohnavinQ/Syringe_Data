@@ -11,6 +11,7 @@ download visual studio code
 download python
 
 in terminal for visual studio code type 
+
     pip install pyserial
 
 
