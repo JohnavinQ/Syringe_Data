@@ -1,8 +1,9 @@
 import csv
+import sys
 
 # Input and output file paths
-txt_file = "pump_data_log.txt"
-csv_file = "pump_data_log.csv"
+txt_file = sys.argv[1]
+csv_file = sys.argv[2]
 
 with open(txt_file, "r") as infile, open(csv_file, "w", newline="") as outfile:
     writer = csv.writer(outfile)

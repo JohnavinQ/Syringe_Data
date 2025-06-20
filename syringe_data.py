@@ -1,12 +1,13 @@
 import serial
 import time
 import msvcrt  # For detecting keypress on Windows
+import sys
 
 # === Configuration ===
 COM_PORT = 'COM7'         # Change this to match your actual COM port
 BAUD_RATE = 115200         # Or whatever your pump is using
 COMMAND = 'ivolume\r'     # Pump command (note: ends in \r, not \n)
-LOG_FILENAME = 'volume_log.txt'
+LOG_FILENAME = sys.argv[1]
 DELAY_SECONDS = 1         # Time between each query
 
 # === Open Serial Connection ===
@@ -18,7 +19,7 @@ except serial.SerialException as e:
     exit()
 
 # === Open Log File ===
-with open(LOG_FILENAME, 'a') as logfile:
+with open(LOG_FILENAME.txt, 'a') as logfile:
     print(f"Logging started. Writing to {LOG_FILENAME}")
     
     try:
