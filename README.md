@@ -6,9 +6,13 @@ b { color: Blue}
 </style>
 
 # downloads
-    download visual studio code
-    download python
-in terminal for visual studio code type <o>pip install pyserial</o>
+download visual studio code
+
+download python
+
+in terminal for visual studio code type 
+    pip install pyserial
+
 
 # syringe_data.py
 command to gather data <o>"python syringe_data.py"</o>
