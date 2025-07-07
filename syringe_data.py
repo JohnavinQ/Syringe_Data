@@ -8,7 +8,7 @@ COM_PORT = 'COM7'         # Change this to match your actual COM port
 BAUD_RATE = 115200         # Or whatever your pump is using
 COMMAND = 'ivolume\r'     # Pump command (note: ends in \r, not \n)
 LOG_FILENAME = sys.argv[1] +'.txt'
-DELAY_SECONDS = 1         # Time between each query
+DELAY_SECONDS = .5       # Time between each query
 
 # === Open Serial Connection ===
 try:
@@ -31,7 +31,7 @@ with open(LOG_FILENAME, 'a') as logfile:
 
             # Send IVOLUME command
             ser.write(COMMAND.encode())
-            time.sleep(0.1)  # Give pump time to respond
+            #time.sleep(0.1)  # Give pump time to respond
 
             # Read response
             response = ser.readline().decode(errors='ignore').strip()
