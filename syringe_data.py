@@ -19,7 +19,7 @@ except serial.SerialException as e:
     exit()
 
 # === Open Log File ===
-with open(LOG_FILENAME.txt, 'a') as logfile:
+with open(LOG_FILENAME, 'a') as logfile:
     print(f"Logging started. Writing to {LOG_FILENAME}")
     
     try:

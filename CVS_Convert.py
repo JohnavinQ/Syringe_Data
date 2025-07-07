@@ -7,7 +7,7 @@ csv_file = sys.argv[2]
 
 with open(txt_file, "r") as infile, open(csv_file, "w", newline="") as outfile:
     writer = csv.writer(outfile)
-    writer.writerow(["timestamp", "message"])  # CSV header
+    writer.writerow(["Date", " Time", "Milisecond", "message"])  # CSV header
 
     for line in infile:
         if " - " in line:
