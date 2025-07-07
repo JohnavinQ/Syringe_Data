@@ -7,7 +7,7 @@ import sys
 COM_PORT = 'COM7'         # Change this to match your actual COM port
 BAUD_RATE = 115200         # Or whatever your pump is using
 COMMAND = 'ivolume\r'     # Pump command (note: ends in \r, not \n)
-LOG_FILENAME = sys.argv[1]
+LOG_FILENAME = sys.argv[1] +'.txt'
 DELAY_SECONDS = 1         # Time between each query
 
 # === Open Serial Connection ===
