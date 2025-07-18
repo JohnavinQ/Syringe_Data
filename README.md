@@ -35,6 +35,11 @@ to run CVS_Convert.py type in the terminal:
 you need to put <g>text_name.txt </g> in text_file
 and <g>CVS_name.cvs</g> in the CVS_file  
 
+# Git
+commands to use
 
+    cd Syringe_Data
+    
+    git pull origin main
 
 
