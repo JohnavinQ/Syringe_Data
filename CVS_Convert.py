@@ -2,8 +2,8 @@ import csv
 import sys
 
 # Input and output file paths
-txt_file = sys.argv[1]
-csv_file = sys.argv[2]
+txt_file = sys.argv[1] + 'txt'
+csv_file = sys.argv[2] + '.csv'
 
 with open(txt_file, "r") as infile, open(csv_file, "w", newline="") as outfile:
     writer = csv.writer(outfile)
